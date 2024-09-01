@@ -40,6 +40,7 @@ form.addEventListener('submit',(e) =>{
         return
     }
 
+    //hiding the loader before form submission
     loader.classList.remove('loader-hidden')
 
     // in the fetch a post method is used that will add the data i.e email and password to the url that is provided
@@ -58,13 +59,22 @@ form.addEventListener('submit',(e) =>{
     .then(data => {
         showAlert('Login Successful')  //if there are no errors this success message will be displayed
         console.log(data)
+
+        // giving functionality to store the email password
+        if (rememberMeCheckbox.checked) {
+            localStorage.setItem('email', email);
+            localStorage.setItem('password', password);
+        } else {
+            localStorage.removeItem('email');
+            localStorage.removeItem('password');
+        }
     })
     .catch(error => {
         showAlert('Login Failed')         //if there are errors this error message will be displayed
         console.error('Error',error)
     })
     .finally(()=>{
-        loader.classList.add('loader-hidden')
+        loader.classList.add('loader-hidden') //displays the loader after the submission of form
 
     })
     

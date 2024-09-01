@@ -96,6 +96,10 @@ i {
     font-size: 20px;
     color: rgb(191, 203, 213);
 }
+#remember_me {
+    margin-right: 1px;
+    cursor: pointer;
+}
 
 
 /* this media query style will be applied to the devices that have large screens with width greater than 600px*/
