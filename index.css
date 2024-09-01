@@ -20,6 +20,7 @@ body{
     width: 400px;
     height: 300px;
     text-align: center;
+    position: relative;
 }
 #email_input{
     width: 270px;
@@ -47,6 +48,7 @@ i {
     border-radius: 15px;
     font-size: 20px;
     cursor: pointer;
+    position: relative;
 }
 .container .btn:hover{
     background-color: rgb(48, 153, 218);
@@ -116,6 +118,7 @@ i {
         width: 300px;
         height: 250px;
         text-align: center;
+        position: relative;
     }
     #email_input{
         width: 270px;
@@ -140,6 +143,7 @@ i {
         height: 30px;
         border-radius: 15px;
         font-size: 20px;
+        position: relative;
     }
     .btn:hover{
         width: 160px;
@@ -212,6 +216,7 @@ i {
         width: 400px;
         height: 290px;
         text-align: center;
+        position: relative;
     }
     #email_input{
         width: 170px;
@@ -234,6 +239,7 @@ i {
         height: 30px;
         border-radius: 15px;
         font-size: 20px;
+        position: relative;
     }
     #error_message{
         color: rgb(220, 29, 29);
@@ -272,6 +278,9 @@ i {
     #Popup-message{
         font-size: 15px;
         color: rgb(191, 203, 213);
+    }
+    #remember_me {
+        margin-right: 5px;
     }
 }
 

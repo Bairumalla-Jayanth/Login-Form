@@ -7,6 +7,18 @@ const error_message = document.getElementById('error_message')
 //Here the valid email pattern is defined for verifying it 
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
+//remember me checkbox functionality is added here
+const rememberMeCheckbox = document.getElementById('remember_me');
+
+
+window.onload = function () {
+    if (localStorage.getItem('email') && localStorage.getItem('password')) {
+        email_input.value = localStorage.getItem('email');
+        password_input.value = localStorage.getItem('password');
+        rememberMeCheckbox.checked = true;
+    }
+};
+
 //for the form the submit event is added using addEventListener
 form.addEventListener('submit',(e) =>{
     e.preventDefault()         //this will prevent the form from auto submitting
