@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Loginform</title>
+    <link rel="stylesheet" href="index.css">  <!-- this link tag is used to provide styles for this html document  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>  <!-- this link tag is used for importing the icons-->
+</head>
+
+<!-- In body section a container is created in which the form is placed with two input fields email,password  and a submit button -->
+
+<body>
+    <div id="loader" class="loader loader-hidden"></div>
+    <div class="container">
+        <h1>LOGIN</h1>
+        <p id="error_message"></p>
+        <br>
+        <form id="form">
+            <div>
+                <label for="email_input"><i class="fa-solid fa-user"></i></label>
+                <input type="text" id="email_input" name="email" placeholder="Enter Email" autocomplete="email">
+            </div>
+            <br>
+            <div>
+                <label for="password_input"><i class="fa-solid fa-lock"></i></label>
+                <input type="password" id="password_input" name="password" placeholder="Enter Password" autocomplete="current-password">
+                <label><i class="fa-solid fa-eye"></i></label> <!-- this is an icon placed inside password placeholder it is used for password visibility or to hide it -->
+            </div>
+            <br>
+            <button type="submit" class="btn">Login</button> <!-- this button is used to submit the form -->
+        </form>
+    </div>
+    <div id="alertPopup" class="Popup">
+        <div class="Popup-content">            
+            <p id="Popup-message"></p>
+            <span class="Ok-btn">OK</span>
+        </div>
+    </div>
+    
+    <script src="index.js"></script> <!-- in the script tag the index.js file is linked where the funtionality for this html document is defined -->
+</body>
+</html>
