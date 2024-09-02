@@ -252,14 +252,14 @@ i {
         display: none;
         position: fixed;
         width: 200px;
-        height: 560px;
+        height: 650px;
     }
     
     .Popup-content{
         text-align: center;
         margin: 15%;
         padding: 10px;
-        width: 80px;
+        width: 150px;
         background-color: rgba(6, 19, 29, 0.463);
     }
     .Ok-btn{
